@@ -8,9 +8,9 @@ def fizzbuzz():
             print("{:s}".format(z), end=" ")
             continue
         if i % 3 == 0:
-            print("{:s}",.format(x), end=" ")
+            print("{:s}".format(x), end=" ")
             continue
         if i % 5 == 0:
-            print("{:s}",.format(y), end=" ")
+            print("{:s}".format(y), end=" ")
             continue
         print("{:d}".format(i), end=" ")
