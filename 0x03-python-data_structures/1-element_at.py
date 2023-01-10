@@ -5,5 +5,5 @@ def element_at(my_list, idx):
     i = 0
     while 1:
         if i == idx:
-            return mylist[i]
+            return my_list[i]
         i += 1
