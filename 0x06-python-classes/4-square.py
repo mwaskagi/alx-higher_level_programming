@@ -4,7 +4,7 @@
 
 class Square:
     """ Class Square """
-    def __init___(self, size=0):
+    def __init  __(self, size=0):
         """ Constructor """
         self.__size = size
 
