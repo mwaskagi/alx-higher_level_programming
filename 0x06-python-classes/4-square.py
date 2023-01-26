@@ -13,7 +13,7 @@ class Square:
         """ Method property of size, return size """
         return self.__size
 
-    @size_setter
+    @size.setter
     def size(self, value):
         """ Method size_setter attribute evlauate the value """
         if not isinstance(value, int):
