@@ -16,7 +16,21 @@ class Square:
 
     @property
     def size(self):
-        """property of the length of a side of square """
+        """ property length of side """
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        """ set size """
+        if type(value) is not int:
+            raise TypeError("size mest be  an integer")
+        if value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
+
+    @property
+    def position(self):
+        """property of position of square """
         return self.__position
 
     @position.setter
@@ -26,7 +40,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 positibe integers")
         if len(value) != 2:
             raise TypeError("position must be a tuple of 2 position integers")
-        if len([i for i in value if type(i) is not int and i >= 0]) != 2:
+        if len([i for i in value if type(i) is int and i >= 0]) != 2:
             raise TypeError("position must be a tuple of 2 position integers")
         self.__position = value
 
