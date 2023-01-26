@@ -5,17 +5,8 @@
 class Square:
     """ Class Square """
     def __init___(self, size=0):
-        """ Module validation """
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
-
-    def area(self):
-        """ Method return areas """
-        return(self.__size ** 2)
+        """ Constructor """
+        self.__size = size
 
     @property
     def size(self):
@@ -25,9 +16,13 @@ class Square:
     @size_setter
     def size(self, value):
         """ Method size_setter attribute evlauate the value """
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
+    def area(self):
+        """ Cal Area """
+        return(self.__size ** 2)
