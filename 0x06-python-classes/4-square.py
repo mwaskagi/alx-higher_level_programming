@@ -25,4 +25,4 @@ class Square:
 
     def area(self):
         """ Cal Area """
-        return(self.__size * self.__size)
+        return(self.__size ** 2)
