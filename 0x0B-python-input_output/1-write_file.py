@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+"""
+function that writes a string to a text file
+"""
+
 
 def write_file(filename="", text=""):
     """
-     Function writes a string to a file
-     Return the number of charcters
+    Return the number of charcters written
     """
-    with open(filename, 'w+') as f:
+    with open(filename, 'w') as f:
         return f.write(text)
