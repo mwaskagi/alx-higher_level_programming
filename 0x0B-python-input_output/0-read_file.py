@@ -1,9 +1,14 @@
 #!/usr/bin/python3
+"""
+function that reads a text file and prints it
+"""
+
+
 def read_file(filename=""):
     """
-    Readfile content
+    readfile: read a file using with
     Args:
         filename(str): filename
     """
-    with open(filename, 'r') as a_file:
-        print"{}".format(a_file.read()), end="")
+    with open(filename, 'r') as f:
+        print(f.read(), end="")
