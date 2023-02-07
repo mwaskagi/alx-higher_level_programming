@@ -1,10 +1,15 @@
 #!/usr/bin/python3
+"""
+ Function that appends a string at the end of a file
+"""
 
 
 def append_write(filename="", text=""):
     """
-    function appends a string at end of text file
-    return number of charcters
+    return file and a string append
     """
-    with open(filename, 'a+') as f:
-        return f.write(text)
+
+    with open(filename, 'a') as f:
+        txt = f.write(text)
+    f.closed
+    return (txt)
