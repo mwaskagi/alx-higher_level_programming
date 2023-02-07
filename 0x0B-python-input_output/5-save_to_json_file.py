@@ -7,5 +7,8 @@ import json
 
 
 def save_to_json_file(my_obj, filename):
-    with open(filename, 'w') as f:
+    """
+    writing to file
+    """
+    with open(filename, mode='w') as f:
         f.write(json.dumps(my_obj))
