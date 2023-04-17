@@ -10,4 +10,4 @@ if __name__ == "__main__":
     c.execute("SELECT * FROM states ORDER BY id")
     my_states = c.fetchall()
     for state in my_states:
-        print(state)
+        print "(%s, '%s')" % state
