@@ -12,4 +12,4 @@ if __name__ == "__main__":
         if state[1].startswith("N"):
             print(state)
     c.close()
-    db.clos()
+    db.close()
